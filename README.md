@@ -1,2 +1,5 @@
-# lab6-docker
-Repositorio para la resolucion de la Práctica lab-docker de la asignatura de HPC - Daniel Gonzalez Palazon
+# lab6
+
+[cite_start]Este repositorio contiene los materiales y soluciones para el **Laboratorio Docker de HPC-Bio**.
+
+**Autor:** Daniel Gonzalez Palazon
