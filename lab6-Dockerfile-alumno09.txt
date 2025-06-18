@@ -1,0 +1,14 @@
+# 1. Partir de la imagen base de Python 3.11 
+FROM python:3.11-slim
+
+# 2. Establecer el directorio de trabajo dentro del contenedor a /app
+WORKDIR /app
+
+# 3. Instalar los paquetes necesarios para el notebook 
+RUN pip install jupyter numpy numba
+
+# 4. Copiar el notebook desde nuestro PC al directorio /app del contenedor 
+COPY pi.ipynb .
+
+# 5. Definir el comando por defecto a ejecutar cuando se inicie el contenedor 
+CMD ["ipython", "/app/pi.ipynb", "10**5"]
